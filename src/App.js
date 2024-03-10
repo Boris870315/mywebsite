@@ -6,6 +6,7 @@ import ContactPage from './pages/contact'
 import ResumePage from'./pages/resume'
 import AboutPage from './pages/about';
 import HelloPage from './pages/hello';
+import NotFoundPage from './pages/notfound';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="resume" element={<ResumePage/>}/>
           <Route path="hello" element={<HelloPage/>}/>
           <Route path="about" element={<AboutPage/>}/>
+          <Route path="/*" element={<NotFoundPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>
