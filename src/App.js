@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import HomePage from './pages/home'
 import ContactPage from './pages/contact'
@@ -11,7 +11,7 @@ import NotFoundPage from './pages/notfound';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="contact" element={<ContactPage/>}/>
@@ -20,9 +20,8 @@ function App() {
           <Route path="about" element={<AboutPage/>}/>
           <Route path="/*" element={<NotFoundPage/>}/>
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
-    
   );
 }
 
