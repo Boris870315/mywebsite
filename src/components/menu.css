@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+  }
+  
+  .menu li {
+    margin-right: 1rem;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s; 
+  }
+  
+  .menu li a:hover,
+  .menu li a:focus {
+    color: #1a73e8;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .menu li {
+      margin-right: 0.5rem;
+    }
+  
+    .header {
+      padding: 0.5rem;
+    }
+  }
+  
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+  
