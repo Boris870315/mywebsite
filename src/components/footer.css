@@ -1,0 +1,17 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 25px 50px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern font */
+    background: var(--body_background);
+  }
+
+  .footer-text {
+    margin: 0;
+    font-size: 16px; /* Slightly larger font size for readability */
+    text-align: center;
+    opacity: 0.8; /* Slightly fade the text for a subtle look */
+    color: var(--body_font);
+  }
+  

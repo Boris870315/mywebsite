@@ -6,7 +6,7 @@ function AboutPage() {
   return (
     <div>
         <MenuBar/>
-      <h1>about</h1>
+      <h1>this </h1>
 
     </div>
   );
