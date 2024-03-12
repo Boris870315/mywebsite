@@ -62,14 +62,13 @@ function MenuBar() {
 
   }
   const toggleTheme = e => {
-     if(e.target.checked){
-      setDarkMode();
+     if(!e.target.checked){
+      setLightMode();
      }
      else{
-      setLightMode();
+      setDarkMode();
     };
   }
-  setDarkMode();
   return (
     <header className="header">
       <div className='logo'>

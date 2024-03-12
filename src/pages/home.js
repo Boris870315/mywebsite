@@ -10,10 +10,9 @@ function HomePage() {
     <div>
       <RainMatrix/>
       <MenuBar/>
-      <div>
-        <h1 className='intro'>Hello, This is Boris</h1>
+      <div >
+        <h1 className='intext'>Hello, This is Boris</h1>
       </div>
-
       <Footer/>
     </div>
   );

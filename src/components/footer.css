@@ -5,6 +5,7 @@
     padding: 25px 50px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern font */
     background: var(--body_background);
+    bottom:0;
   }
 
   .footer-text {

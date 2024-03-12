@@ -1,5 +1,6 @@
 import './App.css';
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect } from 'react';
 
 import HomePage from './pages/home'
 import ContactPage from './pages/contact'
@@ -9,6 +10,10 @@ import HelloPage from './pages/hello';
 import NotFoundPage from './pages/notfound';
 
 function App() {
+    useEffect(() => {
+      document.title = 'Boris';
+      document.body.setAttribute('data-theme', 'dark');
+    }, []);
   return (
     <div>
       <Router>

@@ -1,6 +1,6 @@
-.intext{
+
+.container{
     position: relative;
     z-index: 0;
     color: var(--body_font);
-
 }
