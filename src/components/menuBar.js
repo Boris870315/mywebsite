@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom';
 import { Switch } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import React, { useState } from 'react';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
 import logo_golden from '../assets/logo/logo_golden.png'
+import logo_black from '../assets/logo/logo_black.png'
 import "./menu.css"
 
 function MenuBar() {
+
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 62,
     height: 34,

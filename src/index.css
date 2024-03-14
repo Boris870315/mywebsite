@@ -3,20 +3,20 @@
   --body_font: black;
   --menu_hover: blue;
 
-  --rain_text: #7795aa;
+  --rain_text: #8cc3eb;
   --rain_text_shadow1:#a4cfed;
   --rain_text_shadow:#a4cfed;
   --rain_buttom_text: #c0d5ee;
 }
 [data-Theme='dark'] {
   --body_background: black;
-  --body_font: white;
+  --body_font: rgb(243, 239, 239);
   --menu_hover: rgb(129, 129, 224);
   
-  --rain_text: #115c08;
+  --rain_text: #0d5605;
   --rain_text_shadow1: '0px 0px 8px rgba(32, 194, 14, 0.8)';
   --rain_text_shadow: '0px 0px 20px rgba(255, 255, 255, 1)';
-  --rain_buttom_text: #c1eec0;
+  --rain_buttom_text: #171d17;
 }
 
 body {

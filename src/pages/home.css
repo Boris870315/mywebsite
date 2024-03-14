@@ -1,5 +1,30 @@
-.intext{
-    position: relative;
-    z-index: 0;
-    color: var(--body_font);
-}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+  }
+  
+  .intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Adjust the width as needed */
+  }
+  
+  .intext h1 {
+    text-align: center;
+  }
+  
+  .intext p {
+    text-align: center;
+    margin-top: 20px; 
+  }
+  
+  /* Ensure your img has a defined size, and possibly use object-fit if needed */
+  img {
+    max-width: 50%; 
+    object-fit: contain;
+    z-index: 1;
+  }
+  
