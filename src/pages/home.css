@@ -7,24 +7,41 @@
   
   .intro-container {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
     width: 100%; /* Adjust the width as needed */
   }
   
-  .intext h1 {
-    text-align: center;
+  .intro-container h1 {
+    text-align: justify;
+    text-align-last: justify;
   }
   
   .intext p {
     text-align: center;
     margin-top: 20px; 
+    font-size: 30px;
   }
   
   /* Ensure your img has a defined size, and possibly use object-fit if needed */
   img {
-    max-width: 50%; 
     object-fit: contain;
     z-index: 1;
   }
-  
+
+  @media (max-width: 750px) {
+    .intro-container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+    }
+  }
+  @media (min-width: 750px) {
+    img {
+      max-width: 50%;
+    }
+  }
