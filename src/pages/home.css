@@ -13,8 +13,8 @@
   }
   
   .intro-container h1 {
-    text-align: justify;
-    text-align-last: justify;
+    text-align: center;
+
   }
   
   .intext p {
@@ -24,7 +24,7 @@
   }
   
   /* Ensure your img has a defined size, and possibly use object-fit if needed */
-  img {
+ img {
     object-fit: contain;
     z-index: 1;
   }
@@ -36,12 +36,7 @@
         flex-direction: column;
         align-items: center;
     }
-    img{
+ img{
         width: 100%;
-    }
-  }
-  @media (min-width: 750px) {
-    img {
-      max-width: 50%;
     }
   }

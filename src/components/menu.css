@@ -36,13 +36,11 @@
     cursor: pointer;
   }
   .logo {
-    width: 10rem;
+    width: 20vw;
     height: auto;
     z-index: 1;
   }
-  
-  @media (max-width: 700px) {
-    .container {
-      flex-direction: column; /* 在小屏幕上保持垂直排列 */
-    }
+  .activeLink {
+    color: #ff0000; 
   }
+  

@@ -1,0 +1,32 @@
+[
+    {
+        "id": "0",
+        "skills": "Python",
+        "imgAlt": "Python Logo"
+    },
+    {
+        "id": "1",
+        "skills": "Java",
+        "imgAlt": "Java Logo"
+    },
+    {
+        "id": "2",
+        "skills": "React",
+        "imgAlt": "React Logo"
+    },
+    {
+        "id": "3",
+        "skills": "HTML",
+        "imgAlt": "HTML Logo"
+    },
+    {
+        "id": "4",
+        "skills": "CSS",
+        "imgAlt": "CSS Logo"
+    },
+    {
+        "id": "5",
+        "skills": "JavaScript",
+        "imgAlt": "JavaScript Logo"
+    }
+]

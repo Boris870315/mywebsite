@@ -2,5 +2,16 @@
     position: relative;
     z-index: 0;
     color: var(--body_font);
-
+    text-align: center;
+}
+.education{
+    margin: 1rem;
+    text-align: center;
+    
+}
+.education p{
+    display: inline-block;
+    top: 0;
+    margin: 1rem;
+    font-size: 20px;
 }

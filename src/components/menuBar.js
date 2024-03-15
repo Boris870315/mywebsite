@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Switch } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import React, { useState } from 'react';
@@ -82,11 +82,10 @@ function MenuBar() {
     
     <nav>
         <ul class="menu">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/resume">Resume</Link></li>
-            <li><Link to="/hello">Works</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><NavLink to="/" activeClassName="activeLink">Home</NavLink></li>
+            <li><NavLink to="/about" activeClassName="activeLink">About</NavLink></li>
+            <li><NavLink to="/hello" activeClassName="activeLink">Works</NavLink></li>
+            <li><NavLink to="/contact" activeClassName="activeLink">Contact</NavLink></li>
             <FormControlLabel
         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked onChange={toggleTheme}/>}
       />
