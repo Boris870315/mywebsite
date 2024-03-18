@@ -7,7 +7,7 @@
     border: 2px solid red;
     border-radius: 10px;
     max-width: 11rem;
-    background-color: var(--body_background);
+    background-color: var(--body_background_transparent);
 }
 img {
     width: 10rem;

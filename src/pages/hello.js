@@ -10,7 +10,6 @@ import SkillPiece from '../components/SkillPiece';
 import skillsData from '../assets/skill.json';
 
 function HelloPage() {
-  // Slider 设置
   const settings = {
     dots: true, // 是否显示底部导航点
     infinite: true, // 是否无限循环
@@ -46,8 +45,29 @@ function HelloPage() {
       <MenuBar />
       <div className='intext'>
         <h1> Skills </h1>
-        <Slider {...settings}> 
-          {skillsData.map((skill) => (
+        <div className="slider-container">
+      <Slider {...settings}>
+        <div>
+          <h3>1</h3>
+        </div>
+        <div>
+          <h3>2</h3>
+        </div>
+        <div>
+          <h3>3</h3>
+        </div>
+        <div>
+          <h3>4</h3>
+        </div>
+        <div>
+          <h3>5</h3>
+        </div>
+        <div>
+          <h3>6</h3>
+        </div>
+      </Slider>
+    </div>
+        {skillsData.map((skill) => (
             <div key={skill.id}>
               <SkillPiece 
                 skills={skill.skills} 
@@ -56,7 +76,6 @@ function HelloPage() {
               />
             </div>
           ))}
-        </Slider>
       </div>
       <Footer />
     </div>

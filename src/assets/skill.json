@@ -28,5 +28,9 @@
         "id": "5",
         "skills": "JavaScript",
         "imgAlt": "JavaScript Logo"
+    },{
+        "id": "6",
+        "skills": "Github",
+        "imgAlt": "Github Logo"
     }
 ]
