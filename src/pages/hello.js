@@ -11,16 +11,16 @@ import skillsData from '../assets/skill.json';
 
 function HelloPage() {
   const settings = {
-    dots: true, // 是否显示底部导航点
-    infinite: true, // 是否无限循环
-    speed: 500, // 切换速度
-    slidesToShow: 3, // 同时显示的幻灯片数量
-    slidesToScroll: 1, // 每次滑动的幻灯片数量
-    autoplay: true, // 开启自动播放
-    autoplaySpeed: 2000, // 自动播放的间隔时间
-    responsive: [ // 响应式布局设置
+    dots: true, 
+    infinite: true, 
+    speed: 500, 
+    slidesToShow: 3, 
+    slidesToScroll: 1, 
+    autoplay: true, 
+    autoplaySpeed: 2000, 
+    responsive: [ 
       {
-        breakpoint: 1024, // 屏幕宽度小于1024px时的设置
+        breakpoint: 1024, 
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -47,26 +47,6 @@ function HelloPage() {
         <h1> Skills </h1>
         <div className="slider-container">
       <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-      </Slider>
-    </div>
         {skillsData.map((skill) => (
             <div key={skill.id}>
               <SkillPiece 
@@ -76,6 +56,9 @@ function HelloPage() {
               />
             </div>
           ))}
+      </Slider>
+    </div>
+        
       </div>
       <Footer />
     </div>

@@ -2,6 +2,7 @@
   --body_background: white;
   --body_font: black;
   --menu_hover: blue;
+  --body_background_transparent: rgba(255, 255, 255, 0.9); 
 
   --rain_text: #8cc3eb;
   --rain_text_shadow1:#a4cfed;

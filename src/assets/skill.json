@@ -28,9 +28,25 @@
         "id": "5",
         "skills": "JavaScript",
         "imgAlt": "JavaScript Logo"
-    },{
+    },
+    {
         "id": "6",
         "skills": "Github",
         "imgAlt": "Github Logo"
+    },
+    {
+        "id": "7",
+        "skills": "MySQL",
+        "imgAlt": "MySQL Logo"
+    },
+    {
+        "id": "8",
+        "skills": "AWS",
+        "imgAlt": "AWS Logo"
+    },
+    {
+        "id": "9",
+        "skills": "Unity",
+        "imgAlt": "Unity Logo"
     }
 ]
