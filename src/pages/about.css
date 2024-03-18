@@ -4,14 +4,27 @@
     color: var(--body_font);
     text-align: center;
 }
-.education{
+
+.section{
+    margin-bottom: 2rem;
+}
+
+.education, .activity{
     margin: 1rem;
     text-align: center;
-    
+    background-color: var(--body_background_transparent);
 }
-.education p{
+
+.education p, .activity p{
     display: inline-block;
-    top: 0;
     margin: 1rem;
     font-size: 20px;
 }
+.about-me p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 2rem;
+    font-size: 20px;
+    background-color: var(--body_background_transparent);
+  }
+  

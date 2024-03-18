@@ -8,7 +8,7 @@
   .intro-container {
     display: flex;
     justify-content:space-around;
-    align-items: center;
+    align-items: flex-start;;
     width: 100%; /* Adjust the width as needed */
   }
   
@@ -24,9 +24,12 @@
   }
   
   /* Ensure your img has a defined size, and possibly use object-fit if needed */
- img {
-    object-fit: contain;
-    z-index: 1;
+ .avatar{
+  object-fit: contain;
+  height: auto; /* 確保高度自適應 */
+  width: 100%; /* 或根據需求設定一個固定的寬度 */
+  max-width: 300px; /* 可以設定一個最大寬度以避免圖片過大 */
+  z-index: 1;
   }
 
   @media (max-width: 750px) {
@@ -36,7 +39,7 @@
         flex-direction: column;
         align-items: center;
     }
- img{
+    .avatar{
         width: 100%;
     }
   }

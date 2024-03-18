@@ -36,8 +36,8 @@
     cursor: pointer;
   }
   .logo {
-    width: 20vw;
-    height: auto;
+    max-height: 50px;
+    width: auto;
     z-index: 1;
   }
   .activeLink {

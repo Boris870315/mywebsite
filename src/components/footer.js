@@ -6,7 +6,7 @@ function Footer() {
   // You can add logic here to choose between CopyRightBlack and CopyRightWhite images if needed
   return (
     <footer className="footer-container">
-  <p className="footer-text">© Copyright. All rights reserved.</p>
+  <p className="footer-text">Copyright © 2024 Boris</p>
 </footer>
 
   );

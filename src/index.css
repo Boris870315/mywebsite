@@ -12,6 +12,7 @@
   --body_background: black;
   --body_font: rgb(243, 239, 239);
   --menu_hover: rgb(129, 129, 224);
+  --body_background_transparent: rgba(0, 0, 0, 0.5);
   
   --rain_text: #0d5605;
   --rain_text_shadow1: '0px 0px 8px rgba(32, 194, 14, 0.8)';
