@@ -9,9 +9,11 @@ import Footer from '../components/footer';
 import RainMatrix from '../components/rainMatrix';
 import SkillPiece from '../components/SkillPiece';
 import skillsData from '../assets/skill.json';
+import ExperiencePiece from "../components/ExperiencePiece"
+import experiencesData from '../assets/experience.json';
 
 function HelloPage() {
-  const settings = {
+  const settingsSkills = {
     dots: true,
     infinite: true,
     slidesToShow: 6,
@@ -25,7 +27,7 @@ function HelloPage() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -35,7 +37,7 @@ function HelloPage() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
           arrows: false 
@@ -52,7 +54,7 @@ function HelloPage() {
       <div className='intext'>
         <h1> Skills </h1>
         <div className="slider-container">
-          <Slider {...settings}>
+          <Slider {...settingsSkills}>
             {skillsData.map((skill) => (
               <div key={skill.id}>
                 <SkillPiece 
@@ -64,6 +66,14 @@ function HelloPage() {
              ))}
           </Slider>
         </div>
+        <h1>Previous Experiences</h1>
+        {experiencesData.map((experience) => (
+        <ExperiencePiece key={experience.id} experience={experience} />
+      ))}
+        <div className="slider-container">
+
+        </div>
+
         
       </div>
       <Footer />

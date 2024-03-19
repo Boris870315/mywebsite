@@ -1,0 +1,66 @@
+[
+    {
+        "id": "0",
+        "peojectName": "Design of self-driving vehicles for warehouse storage ",
+        "year":"2017-2018",
+        "position":"Co-Developer", 
+        "company": "FCU Applied Project", 
+        "description": "Used Keil C to develop an MCU (8051) for connecting  the monitor and micro controller unit, responsible for writing code for the Infrared sensor and calculating the  mechanical cycle. <br/> This project used the waterfall model."
+    }, 
+    {
+        "id": "1",
+        "peojectName": "Research on Elevator with Brushless Motor and Regenerative Braking",
+        "year":"2018-2019",
+        "position":"Main-Developer", 
+        "company": "FCU Graduate Project", 
+        "description": "Used Keil C to write the code connecting the main motor driver and MCU (tm4c123gxl), especially for the Wifi module (ESP8266).<br/>Produced the motor driver, including printed circuit board, soldering, and conducted board testing.<br/>Drafted the paper and published at the graduation project seminar.<br/>The project was awarded first place in the Electromagnetic Energy category.<br/>This project used the waterfall model."
+    }, 
+    {
+        "id": "2",
+        "peojectName": "Management Intern",
+        "year":"2019",
+        "position":"Manager", 
+        "company": "Huaya Ya Dong Ying Plastics Corporation, Shandong, China", 
+        "description": "Learned the Enterprise Resource planning (ERP) system for management.<br/>Used ERP system for purchasing decision-making and storage stock monitoring. "
+    },
+    {
+        "id": "3",
+        "peojectName": "Brain Computer Interface System for Human and Machine Synchronisation",
+        "year":"2023",
+        "position":"Operation and Maintenance", 
+        "company": "UTS Graduation Project", 
+        "description": "Used raspberry pi as a demo server for the project, which allowed other devices to access the server via local internet.<br/>Used python to simulate the brain signal.<br/>Created a stable and workable environment to host the project."
+    }, 
+    {
+        "id": "4",
+        "peojectName": "CeramiXR Immersive Exhibition ",
+        "year":"2023",
+        "position":"Creative Coder", 
+        "company": "Sydney Comber Street Studios with hunLAB", 
+        "description": "Used 8th wall to develop the AR project, using A-Frame, three.js and 8th wall library.<br/>Used Unity to develop a VR interactive experience titled ‘Brilliant Earth,’ which were experienced by hundreds of audience members via Meta Quest 2 headset.<br/>Collaborated with over 15 visual artists and designers.<br/>Developed the interactive exhibition guide website.<br/>Used Github to manage iterations of the immersive project. "
+    }, 
+    {
+        "id": "5",
+        "peojectName": "Car website",
+        "year":"2023",
+        "position":"Main Developer", 
+        "company": "UTS Course Project", 
+        "description": "Used php and basic html, css, js. <br/>Created a database based on postgreDB using Elastic Beanstalk.<br/>Monitored website usage using AWS.<br/>Used Github for iteration management. "
+    }, 
+    {
+        "id": "6",
+        "peojectName": "",
+        "year":"2024-present",
+        "position":"Casual Web Maintainnence", 
+        "company": "Shaun Parker & Company", 
+        "description": "Utilized FileZilla for updating the website's footer, which was developed using PHP and MySQL.<br/>The website is developed by the wordpress"
+    }, 
+    {
+        "id": "7",
+        "peojectName": "company website",
+        "year":"2024",
+        "position":"Web developer", 
+        "company": "zhi shun", 
+        "description": "Used Html(react), css, js for developing the website, including the phone version and computerversion.<br/>Using github to control the source code "
+    }
+]

@@ -48,5 +48,10 @@
         "id": "9",
         "skills": "Unity",
         "imgAlt": "Unity Logo"
+    }, 
+    {
+        "id": "10",
+        "skills": "8th Wall",
+        "imgAlt": "8th Wall Logo"
     }
 ]

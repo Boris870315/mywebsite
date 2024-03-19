@@ -4,9 +4,10 @@
     align-items: center;
     justify-content: center;
     text-align: center; 
-    border: 2px solid red;
+    border: 2px solid rgb(128, 0, 255);
     border-radius: 10px;
     max-width: 11rem;
+    max-height: 20rem;
     background-color: var(--body_background_transparent);
 }
 img {
@@ -17,4 +18,8 @@ img {
 .skill-text{
     font-size: 100px;
     color: var(--body_font);
+}
+.skill-piece p{
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
