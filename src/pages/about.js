@@ -28,11 +28,11 @@ function AboutPage() {
         <section className='section'>
           <h2>Education</h2>
           <div className='education'>
-            <p>2015-2020<br/>University of Technology, Sydney (UTS)</p>
+            <p>2015-2020<br/>Feng Chia University (FCU)</p>
             <p>Bachelor of Electrical Engineering</p>
           </div>
           <div className='education'>
-            <p>2022-2023<br/>Feng Chia University (FCU)</p>
+            <p>2022-2023<br/>University of Technology, Sydney (UTS)</p>
             <p>Master of Information Technology</p>
           </div>
         </section>
