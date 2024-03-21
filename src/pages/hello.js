@@ -67,9 +67,12 @@ function HelloPage() {
           </Slider>
         </div>
         <h1>Previous Experiences</h1>
-        {experiencesData.map((experience) => (
-        <ExperiencePiece key={experience.id} experience={experience} />
-      ))}
+        {experiencesData.reduceRight((acc, experience) => {
+  acc.push(<ExperiencePiece key={experience.id} experience={experience} />);
+  return acc;
+}, [])}
+
+
         <div className="slider-container">
 
         </div>
