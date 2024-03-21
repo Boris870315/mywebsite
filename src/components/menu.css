@@ -43,4 +43,10 @@
   .activeLink {
     color: #ff0000; 
   }
+
+  @media screen and (max-width: 600px) {
+    .header p{
+      font-size: 10px;
+    }
+}
   

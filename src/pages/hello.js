@@ -14,7 +14,7 @@ import experiencesData from '../assets/experience.json';
 
 function HelloPage() {
   const settingsSkills = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -30,7 +30,7 @@ function HelloPage() {
           slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
           arrows: false
         }
       },
@@ -40,6 +40,17 @@ function HelloPage() {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
+          dots: false,
+          arrows: false 
+        }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          dots: false,
           arrows: false 
         }
       }
@@ -68,16 +79,10 @@ function HelloPage() {
         </div>
         <h1>Previous Experiences</h1>
         {experiencesData.reduceRight((acc, experience) => {
-  acc.push(<ExperiencePiece key={experience.id} experience={experience} />);
-  return acc;
-}, [])}
+          acc.push(<ExperiencePiece key={experience.id} experience={experience} />);
+          return acc;
+        }, [])}
 
-
-        <div className="slider-container">
-
-        </div>
-
-        
       </div>
       <Footer />
     </div>

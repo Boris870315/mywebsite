@@ -32,4 +32,13 @@
   .project-description{
     text-align: left;
   }
-  
+  @media screen and (max-width: 768px) {
+    .experience-piece {
+        flex-direction: column; /* 在屏幕较小的情况下改为列布局 */
+    }
+
+    .left-column, .right-column {
+        width: 100%; /* 子容器占满整个父容器的宽度 */
+        margin-right: 0; /* 移除右侧栏的外边距 */
+    }
+}
