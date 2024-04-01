@@ -14,7 +14,7 @@ function HomePage() {
       <div className='intro'>
         <div className="intro-container">
           <img className="avatar" src={borisAvatar} alt="Boris Avatar"></img>
-          <h1 className='intext'>Hello, I am Boris<br/>A Sofeware Developer<br/>Based in Sydney</h1>
+          <h1 className='intext'>Hello, I am Boris<br/>A Software Developer<br/>Based in Sydney</h1>
         </div>
         <p className='intext'>Bridging Technology and Imagination, One Line of Code at a Time - Where Innovation Meets Practicality in the Digital World.</p>
       </div>
