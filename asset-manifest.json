@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/mywebsite/static/css/main.36de4d67.css",
-    "main.js": "/mywebsite/static/js/main.ce5adbc1.js",
-    "static/js/453.55b13b6f.chunk.js": "/mywebsite/static/js/453.55b13b6f.chunk.js",
+    "main.css": "/mywebsite/static/css/main.3be2041e.css",
+    "main.js": "/mywebsite/static/js/main.dcb39a75.js",
+    "static/js/453.9141fa0f.chunk.js": "/mywebsite/static/js/453.9141fa0f.chunk.js",
     "static/media/React.png": "/mywebsite/static/media/React.81ed438b18e24116794d.png",
     "static/media/MySQL.png": "/mywebsite/static/media/MySQL.67646295cd91e7a3920e.png",
+    "static/media/Rockwell Automation.png": "/mywebsite/static/media/Rockwell Automation.57920f20ad2a5ec83664.png",
     "static/media/boris.jpg": "/mywebsite/static/media/boris.7f1510ad940fbb156a7c.jpg",
     "static/media/logo_black.png": "/mywebsite/static/media/logo_black.bd02d7f24525539432a7.png",
     "static/media/8th Wall.png": "/mywebsite/static/media/8th Wall.e9ac601386c9f1ec6b92.png",
@@ -22,12 +23,12 @@
     "static/media/slick.ttf": "/mywebsite/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/mywebsite/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/mywebsite/index.html",
-    "main.36de4d67.css.map": "/mywebsite/static/css/main.36de4d67.css.map",
-    "main.ce5adbc1.js.map": "/mywebsite/static/js/main.ce5adbc1.js.map",
-    "453.55b13b6f.chunk.js.map": "/mywebsite/static/js/453.55b13b6f.chunk.js.map"
+    "main.3be2041e.css.map": "/mywebsite/static/css/main.3be2041e.css.map",
+    "main.dcb39a75.js.map": "/mywebsite/static/js/main.dcb39a75.js.map",
+    "453.9141fa0f.chunk.js.map": "/mywebsite/static/js/453.9141fa0f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36de4d67.css",
-    "static/js/main.ce5adbc1.js"
+    "static/css/main.3be2041e.css",
+    "static/js/main.dcb39a75.js"
   ]
 }
