@@ -1,0 +1,9 @@
+.container{
+    position: relative;
+    z-index: 1;
+    color: var(--body_font);
+}
+.intext {
+    display: block; 
+    margin: 2rem;
+}

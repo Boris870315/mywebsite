@@ -1,0 +1,62 @@
+[
+    {
+        "id": "0",
+        "skills": "Python",
+        "imgAlt": "Python Logo"
+    },
+    {
+        "id": "1",
+        "skills": "Java",
+        "imgAlt": "Java Logo"
+    },
+    {
+        "id": "2",
+        "skills": "React",
+        "imgAlt": "React Logo"
+    },
+    {
+        "id": "3",
+        "skills": "HTML",
+        "imgAlt": "HTML Logo"
+    },
+    {
+        "id": "4",
+        "skills": "CSS",
+        "imgAlt": "CSS Logo"
+    },
+    {
+        "id": "5",
+        "skills": "JavaScript",
+        "imgAlt": "JavaScript Logo"
+    },
+    {
+        "id": "6",
+        "skills": "Github",
+        "imgAlt": "Github Logo"
+    },
+    {
+        "id": "7",
+        "skills": "MySQL",
+        "imgAlt": "MySQL Logo"
+    },
+    {
+        "id": "8",
+        "skills": "AWS",
+        "imgAlt": "AWS Logo"
+    },
+    {
+        "id": "9",
+        "skills": "Unity",
+        "imgAlt": "Unity Logo"
+    }, 
+    {
+        "id": "10",
+        "skills": "8th Wall",
+        "imgAlt": "8th Wall Logo"
+    }, 
+    {
+        "id": "11",
+        "skills": "Rockwell Automation",
+        "imgAlt": "RA"
+    }
+]

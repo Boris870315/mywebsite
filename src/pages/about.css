@@ -1,0 +1,64 @@
+    .intextAbout{
+    position: relative;
+    z-index: 0;
+    color: var(--body_font);
+    text-align: center;
+  }
+  
+  .section{
+    margin-bottom: 2rem;
+  }
+  
+  /* About me 內容可保留你原本的 */
+  .about-me p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 2rem;
+    font-size: 20px;
+    background-color: var(--body_background_transparent);
+  }
+  
+  /* ✅ Education / Activities：跟 Experience 同款兩欄樣式 */
+  .two-col-item{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 20px;
+    align-items: start;
+    margin: 2rem;
+    padding: 10px;
+    background-color: var(--body_background_transparent);
+  }
+  
+  /* 左右兩欄都用同一套結構：兩行 + 小 gap */
+  .left-meta,
+  .right-meta{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    text-align: left;
+  }
+  
+  /* 標題行（年份/職稱/學位） */
+  .meta-title{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  
+  /* 副標行（學校/描述） */
+  .meta-sub{
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.4;
+    opacity: 0.95; /* 想更淡可調 0.8 */
+  }
+  
+  /* RWD：小螢幕改成上下 */
+  @media screen and (max-width: 768px) {
+    .two-col-item{
+      grid-template-columns: 1fr;
+      row-gap: 8px;
+    }
+  }
+  

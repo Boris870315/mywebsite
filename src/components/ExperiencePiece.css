@@ -1,0 +1,75 @@
+.experience-piece {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: var(--body_background_transparent);
+}
+
+/* 讓「左 30% / 右 70%」一致（meta-row 與 project-row 共用同一套） */
+.meta-row,
+.project-row {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  column-gap: 20px;
+  align-items: start;
+}
+
+/* meta-row 底下留點距離，讓它跟專案列表分開 */
+.meta-row {
+  margin-bottom: 8px;
+}
+
+.left-meta{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;          /* 想更近就 0~1px */
+}
+
+.left-meta .company,
+.left-meta .year{
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+}
+
+
+/* 右側職位 */
+.right-meta{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;          /* 想更近就 0~1px */
+}
+.right-meta .position {
+  margin: 0;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+/* 每個專案名稱 */
+.right-meta .project-name {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+/* 每個專案描述 */
+.right-meta .project-description {
+  margin: 0;
+  text-align: left;
+  padding-bottom: 10px;
+  justify-content: space-between;
+} 
+
+/* RWD：小螢幕改成上下排列 */
+@media screen and (max-width: 768px) {
+  .meta-row,
+  .project-row {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+  }
+
+  .project-name {
+    font-weight: 600;
+    padding-bottom: 0;
+  }
+}
