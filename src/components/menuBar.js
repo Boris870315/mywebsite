@@ -9,6 +9,9 @@ import logo_black from '../assets/logo/logo_black.png'
 import "./menu.css"
 
 function MenuBar() {
+  const [isDark, setIsDark] = useState(
+    () => document.documentElement.dataset.theme === 'dark'
+  );
 
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 62,
@@ -56,22 +59,13 @@ function MenuBar() {
       borderRadius: 20 / 2,
     },
   }));
-  const setDarkMode = () => {
-    document.querySelector('body').setAttribute('data-theme', 'dark');
-
-  }
-  const setLightMode = () => {
-    document.querySelector('body').setAttribute('data-theme', 'light');
-
-  }
   const toggleTheme = e => {
-     if(!e.target.checked){
-      setLightMode();
-     }
-     else{
-      setDarkMode();
-    };
-  }
+    const dark = e.target.checked;
+    setIsDark(dark);
+    const theme = dark ? 'dark' : 'light';
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem('theme', theme);
+  };
   return (
     <header className="header">
       <div className='logo'>
@@ -87,7 +81,7 @@ function MenuBar() {
             <li><NavLink to="/hello" activeClassName="activeLink">Works</NavLink></li>
             <li><NavLink to="/contact" activeClassName="activeLink">Contact</NavLink></li>
             <FormControlLabel
-        control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked onChange={toggleTheme}/>}
+        control={<MaterialUISwitch sx={{ m: 1 }} checked={isDark} onChange={toggleTheme}/>}
       />
     </ul>
   </nav>
