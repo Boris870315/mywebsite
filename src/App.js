@@ -11,7 +11,6 @@ import NotFoundPage from './pages/notfound';
 function App() {
     useEffect(() => {
       document.title = 'Boris';
-      document.body.setAttribute('data-theme', 'dark');
     }, []);
   return (
     <div>
