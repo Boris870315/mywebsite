@@ -7,3 +7,23 @@
     display: block; 
     margin: 2rem;
 }
+
+.slider-container {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .intext {
+        margin: 1.25rem 1rem;
+    }
+
+    .intext > h1 {
+        margin: 1.5rem 0 1rem;
+        font-size: 1.75rem;
+    }
+
+    .slider-container {
+        width: calc(100% - 8px);
+        margin: 0 auto 2rem;
+    }
+}

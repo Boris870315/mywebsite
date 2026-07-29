@@ -10,10 +10,11 @@
     max-height: 20rem;
     background-color: var(--body_background_transparent);
 }
-img {
+.skill-piece img {
     width: 10rem;
     height: 10rem;
     margin: 1rem;
+    object-fit: contain;
 }
 .skill-text{
     font-size: 100px;
@@ -22,4 +23,18 @@ img {
 .skill-piece p{
     margin-top: 0;
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .skill-piece {
+        max-width: none;
+        min-height: 13rem;
+        margin: 0 0.4rem;
+    }
+
+    .skill-piece img {
+        width: 7rem;
+        height: 7rem;
+        margin: 1rem;
+    }
 }

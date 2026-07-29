@@ -44,9 +44,80 @@
     color: #ff0000; 
   }
 
+  .menu-toggle {
+    display: none;
+  }
+
   @media screen and (max-width: 600px) {
-    .header p{
-      font-size: 10px;
+    .header {
+      position: relative;
+      padding: 0.75rem 1rem;
     }
-}
+
+    .logo {
+      max-height: 42px;
+      margin: 0;
+    }
+
+    .menu-toggle {
+      display: flex;
+      width: 44px;
+      height: 44px;
+      padding: 10px;
+      border: 0;
+      border-radius: 8px;
+      background: transparent;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--body_font);
+    }
+
+    .header nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      padding: 0.5rem 1rem 1rem;
+      background: var(--body_background);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+    }
+
+    .header nav.nav-open {
+      display: block;
+    }
+
+    .menu {
+      align-items: stretch;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .menu li {
+      margin: 0;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+    }
+
+    .menu li a {
+      display: block;
+      padding: 0.8rem 0.25rem;
+      font-size: 1rem;
+    }
+
+    .menu .theme-control {
+      display: flex;
+      min-height: 48px;
+      align-items: center;
+      border-bottom: 0;
+    }
+  }
   

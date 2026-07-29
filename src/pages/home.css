@@ -1,9 +1,22 @@
 .intro {
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+}
 
-    margin: 3rem;
-  }
+.intro-heading {
+  color: var(--body_font);
+  line-height: 1.18;
+}
+
+.intro-tagline {
+  margin: 3rem 2rem 0;
+  color: var(--body_font);
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
   
   .intro-container {
     display: flex;
@@ -27,6 +40,10 @@
   }
 
   @media (max-width: 750px) {
+    .intro {
+      margin: 1.25rem 1rem 2rem;
+    }
+
     .intro-container{
         width: 100%;
         height: auto;
@@ -40,5 +57,17 @@
         margin: 0;
         height: auto;
         max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .intro-heading {
+      width: 100%;
+      margin: 1.5rem 0 0;
+      font-size: clamp(1.8rem, 8vw, 2.4rem);
+    }
+
+    .intro-tagline {
+      margin: 1.5rem 0 0;
+      font-size: 1rem;
     }
   }

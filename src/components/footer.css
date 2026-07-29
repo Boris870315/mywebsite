@@ -15,4 +15,14 @@
     opacity: 0.8; /* Slightly fade the text for a subtle look */
     color: var(--body_font);
   }
-  
+
+  @media screen and (max-width: 600px) {
+    .footer-container {
+      justify-content: center;
+      padding: 1.25rem 1rem;
+    }
+
+    .footer-text {
+      font-size: 0.875rem;
+    }
+  }

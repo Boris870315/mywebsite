@@ -5,13 +5,13 @@ import React, { useState } from 'react';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
 import logo_golden from '../assets/logo/logo_golden.png'
-import logo_black from '../assets/logo/logo_black.png'
 import "./menu.css"
 
 function MenuBar() {
   const [isDark, setIsDark] = useState(
     () => document.documentElement.dataset.theme === 'dark'
   );
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 62,
@@ -69,24 +69,38 @@ function MenuBar() {
   return (
     <header className="header">
       <div className='logo'>
-      <Link to="/">
-        <img src={logo_golden} className="logo" alt='Boris Chen'></img>
-    </Link>
+        <Link to="/" onClick={() => setIsMenuOpen(false)}>
+          <img src={logo_golden} className="logo" alt='Boris Chen'></img>
+        </Link>
       </div>
-    
-    <nav>
-        <ul class="menu">
-            <li><NavLink to="/" activeClassName="activeLink">Home</NavLink></li>
-            <li><NavLink to="/about" activeClassName="activeLink">About</NavLink></li>
-            <li><NavLink to="/hello" activeClassName="activeLink">Works</NavLink></li>
-            <li><NavLink to="/contact" activeClassName="activeLink">Contact</NavLink></li>
-            <FormControlLabel
-        control={<MaterialUISwitch sx={{ m: 1 }} checked={isDark} onChange={toggleTheme}/>}
-      />
-    </ul>
-  </nav>
-</header>
 
+      <button
+        className="menu-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded={isMenuOpen}
+        onClick={() => setIsMenuOpen(open => !open)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav className={isMenuOpen ? 'nav-open' : ''}>
+        <ul className="menu">
+          <li><NavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</NavLink></li>
+          <li><NavLink to="/about" onClick={() => setIsMenuOpen(false)}>About</NavLink></li>
+          <li><NavLink to="/hello" onClick={() => setIsMenuOpen(false)}>Works</NavLink></li>
+          <li><NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</NavLink></li>
+          <li className="theme-control">
+            <FormControlLabel
+              aria-label="Toggle color theme"
+              control={<MaterialUISwitch sx={{ m: 0 }} checked={isDark} onChange={toggleTheme}/>}
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 

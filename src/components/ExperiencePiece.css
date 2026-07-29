@@ -62,6 +62,12 @@
 
 /* RWD：小螢幕改成上下排列 */
 @media screen and (max-width: 768px) {
+  .experience-piece {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
   .meta-row,
   .project-row {
     grid-template-columns: 1fr;
@@ -71,5 +77,11 @@
   .project-name {
     font-weight: 600;
     padding-bottom: 0;
+  }
+
+  .left-meta,
+  .right-meta {
+    margin-top: 0.75rem;
+    gap: 6px;
   }
 }

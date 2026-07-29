@@ -4,11 +4,11 @@
     color: var(--body_font);
     text-align: center;
   }
-  
+
   .section{
     margin-bottom: 2rem;
   }
-  
+
   /* About me 內容可保留你原本的 */
   .about-me p {
     text-align: justify;
@@ -56,9 +56,29 @@
   
   /* RWD：小螢幕改成上下 */
   @media screen and (max-width: 768px) {
+    .intextAbout {
+      padding: 0 1rem;
+    }
+
+    .about-me p {
+      margin: 1rem 0;
+      padding: 1rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
     .two-col-item{
       grid-template-columns: 1fr;
       row-gap: 8px;
+      margin: 1rem 0;
+      padding: 1rem;
+    }
+
+    .meta-title {
+      font-size: 1.1rem;
+    }
+
+    .meta-sub {
+      font-size: 1rem;
     }
   }
-  
