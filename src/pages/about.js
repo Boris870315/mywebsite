@@ -10,7 +10,7 @@ function AboutPage() {
     <div>
       <RainMatrix/>
       <MenuBar/>
-      <div className='intextAbout'>
+      <div className='about-content'>
         <section className='section about-me'>
           <h1>Hi! This is Boris</h1>
           <p>Hi, I’m Boris. I work at the intersection of automation engineering and software development, and I also build Unity 3D experiences across VR and AR. I enjoy turning complex ideas into systems and products that are stable, usable, and easy to maintain—whether that’s an industrial automation workflow or an immersive interactive application.</p>

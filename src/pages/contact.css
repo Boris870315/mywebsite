@@ -1,22 +1,23 @@
-.intext {
+.contact-heading,
+.contact-intro {
     position: relative;
     z-index: 1;
-    display: flex; 
-    justify-content: space-around;
     color: var(--body_font);
-    flex-wrap: wrap;
-}
-.contact-container{
-    z-index: 1;
-    position: relative;
-    z-index: 1;
-    display: flex; 
-    justify-content: space-around;
-    color: var(--body_font);
-    flex-wrap: wrap;
+    text-align: center;
 }
 
-.contact {
+.contact-grid {
+    position: relative;
+    z-index: 1;
+    display: flex; 
+    justify-content: space-around;
+    color: var(--body_font);
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    padding: 1rem;
+}
+
+.contact-card {
     position: relative;
     flex: 1;  
     padding: 20px; 
@@ -26,15 +27,46 @@
     font-size: 16px;
     max-width: 40%;
     box-sizing: border-box;
-    margin: 10px;
     min-width: 250px; 
-    overflow: auto; 
     text-align: center;
 }
 
+.contact-icon {
+    display: block;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 1rem;
+    object-fit: contain;
+}
+
+.contact-card a {
+    overflow-wrap: anywhere;
+}
+
 @media (max-width: 768px) {
-    .phone-container, .email-container {
-        flex-basis: 100%; 
-        max-width: 100%; 
+    .contact-heading {
+        margin-top: 1.25rem;
+    }
+
+    .contact-intro {
+        margin: 0.5rem 1rem 1rem;
+    }
+
+    .contact-grid {
+        flex-direction: column;
+        padding: 0 1rem 1.5rem;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        margin: 0;
+        padding: 1.5rem 1rem;
+    }
+
+    .contact-icon {
+        width: 80px;
+        height: 80px;
     }
 }

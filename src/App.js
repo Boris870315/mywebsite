@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import HomePage from './pages/home'
 import ContactPage from './pages/contact'
 import AboutPage from './pages/about';
-import HelloPage from './pages/hello';
+import WorksPage from './pages/works';
 import NotFoundPage from './pages/notfound';
 
 function App() {
@@ -18,7 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="contact" element={<ContactPage/>}/>
-          <Route path="hello" element={<HelloPage/>}/>  {/*this is work page*/}
+          <Route path="works" element={<WorksPage/>}/>
+          <Route path="hello" element={<WorksPage/>}/>
           <Route path="about" element={<AboutPage/>}/>
           <Route path="/*" element={<NotFoundPage/>}/>
         </Routes>

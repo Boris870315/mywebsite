@@ -90,7 +90,7 @@ function MenuBar() {
         <ul className="menu">
           <li><NavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</NavLink></li>
           <li><NavLink to="/about" onClick={() => setIsMenuOpen(false)}>About</NavLink></li>
-          <li><NavLink to="/hello" onClick={() => setIsMenuOpen(false)}>Works</NavLink></li>
+          <li><NavLink to="/works" onClick={() => setIsMenuOpen(false)}>Works</NavLink></li>
           <li><NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</NavLink></li>
           <li className="theme-control">
             <FormControlLabel

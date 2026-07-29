@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import './hello.css'
+import './works.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -12,7 +12,7 @@ import skillsData from '../assets/skill.json';
 import ExperiencePiece from "../components/ExperiencePiece"
 import experiencesData from '../assets/experience.json';
 
-function HelloPage() {
+function WorksPage() {
   const settingsSkills = {
     dots: false,
     infinite: true,
@@ -62,7 +62,7 @@ function HelloPage() {
     <div className='container'>
       <RainMatrix />
       <MenuBar />
-      <div className='intext'>
+      <div className='works-content'>
         <h1> Skills </h1>
         <div className="slider-container">
           <Slider {...settingsSkills}>
@@ -89,4 +89,4 @@ function HelloPage() {
   );
 }
 
-export default HelloPage;
+export default WorksPage;
